@@ -3,7 +3,7 @@ pipeline {
     agent any
    
     environment {
-        DOCKER_IMAGE = 'rejanipk/zomato:latest'
+        DOCKER_IMAGE = 'abhithamurali/zomato:latest'
         CONTAINER_NAME = 'zomato-container'
     }
 
@@ -12,7 +12,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/RejaniPK2025/ZOMATO.git'
+                    url: 'https://github.com/abhithapmurali123/ZOMATO.git'
             }
         }
 
